@@ -1,5 +1,5 @@
 <!-- <form action="/users" method="POST">
-<p>
+
     <label for="username">Username : </label>
     <input type="text" name="user[username]" id="username"/>
 </p>
@@ -17,12 +17,39 @@
 </p>
 </form> -->
 
-<%= form_tag('/users', method: 'post') do |f| %>
-    <%= label_tag(:username, 'Username:') %>
-    <%= text_field_tag(:username) %>
-    <%= label_tag(:email, 'Email:') %>
-    <%= text_field_tag(:email) %>
-    <%= label_tag(:password, 'Password:') %>
-    <%= password_field_tag(:password) %>
-    <%= submit_tag('Save') %>
+<%#= form_tag('/users', method: 'post') do %>
+
+    <%#= label_tag(:username, 'Username:') %>
+    <%#= text_field_tag(:username) %>
+
+    <%#= label_tag(:email, 'Email:') %>
+    <%#= text_field_tag(:email) %>
+
+    <%#= label_tag(:password, 'Password:') %>
+    <%#= password_field_tag(:password) %>
+
+    <%#= submit_tag('Save') %>
+
+<%# end %>
+
+<%= form_for(@user) do |f| %>
+<p>
+    <%= f.label :username %><br />
+    <%= f.text_field :username %>
+</p>
+<p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+</p>
+<p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+</p>
+<p>
+    <%= f.label :password %><br />
+    <%= f.password_field :password %>
+</p>
+<p>
+    <%= f.submit %>
+</p>
 <% end %>
