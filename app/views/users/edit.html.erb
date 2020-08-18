@@ -33,24 +33,26 @@
 <%# end %>
 
 <%= form_for(@user) do |f| %>
-    <ul>
-        <% @user.errors.full_messages.each do |error| %>
-            <li><%= error %></li>
-        <%end%>
-    </ul>
-    <div>
-        <%= f.label :username, "Enter your username here:" %><br />
-        <%= f.text_field :username, placeholder:"username" %>
-    </div>
-    <div>
-        <%= f.label :email, "Enter your email address here: " %><br />
-        <%= f.text_field :email, placeholder:"example@example.com" %>
-    </div>
-    <div>
-        <%= f.label :password, "Enter your password here: " %><br />
-        <%= f.password_field :password, placeholder:"password" %>
-    </div>
-    <div>
-        <%= f.submit %>
+    <div class="form-container">
+        <ul>
+            <% @user.errors.full_messages.each do |error| %>
+                <li><%= error %></li>
+            <%end%>
+        </ul>
+        <div>
+            <%= f.label :username, "Enter your username here:" %><br />
+            <%= f.text_field :username, placeholder:"username" %>
+        </div>
+        <div>
+            <%= f.label :email, "Enter your email address here: " %><br />
+            <%= f.text_field :email, placeholder:"example@example.com" %>
+        </div>
+        <div>
+            <%= f.label :password, "Enter your password here: " %><br />
+            <%= f.password_field :password, placeholder:"password" %>
+        </div>
+        <div>
+            <%= f.submit %>
+        </div>
     </div>
 <% end %>
