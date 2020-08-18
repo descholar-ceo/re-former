@@ -26,13 +26,20 @@ This project is for learning purpose just to get familiar with Forms and helpers
 1. Run `bin/rails db:migrate` to create necessary tables in database
 
 ### Testing
+1. Start the server by running `bin/rails server`, if all of the above steps has been followed correctly, you should get a server started on `https://127.0.0.1:3000` or easily `https://localhost:3000`
 1. Go to these paths:
 ```bash
-    POST   /users/new => Create a user 1
-    PATCH   /users/1/new => Edit user 1
+    GET   /users/new => Create a user 1
+    GET   /users/1/edit => Edit user 1
 ```
 
 and observe the changes in your terminal
+
+### The forms look like the following on the screensgots
+|Add a new user|Update existing user|
+|-|-|
+|![](app/assets/images/add-scr.png)|![](app/assets/images/update-scr.png)|
+|||
 
 ## Contributing
 There are two ways of contributing to this project:

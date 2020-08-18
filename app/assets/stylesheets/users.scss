@@ -6,17 +6,28 @@ $primary:rgb(65, 63, 63);
 $white-color:rgb(255, 255, 255);
 $red-color:rgb(255, 0, 0);
 
+*{
+  font-family: sans-serif;
+}
+
 body {
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
-.form-container {
+h1{
+  margin: 10% auto 0 auto;
+  width: 40%;
+  text-align: center;
+}
+
+form {
   border: 1px solid $primary;
   border-radius: 5px;
   padding: 12px;
   width: 40%;
-  margin: 10% auto 10% auto;
+  margin: 0 auto 10% auto;
 
   div:last-child {
     width: 100%;
@@ -35,8 +46,10 @@ body {
   input {
     width: 98%;
     height: 25px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    border: 1px solid $primary;
     border-radius: 5px;
+    outline: none;
     padding: 5px;
     font-size: 1rem;
   }

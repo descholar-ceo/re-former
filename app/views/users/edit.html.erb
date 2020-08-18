@@ -1,58 +1,53 @@
-<!-- <form action="/users" method="POST">
-
+<!-- USING raw html
+<form action="/users" method="POST" accept-charset="UTF-8>
+<div>
     <label for="username">Username : </label>
     <input type="text" name="user[username]" id="username"/>
-</p>
-<p>
+</div>
+
+<div>
     <label for="email">Email : </label>
     <input type="email" name="user[email]" id="email"/>
-</p>
-<p>
+</div>
+
+<div>
     <label for="password">Password : </label>
     <input type="password" name="user[password]" id="password"/>
-</p>
-<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
-<p>
-    <input type="submit" value="Save"/>
-</p>
-</form> -->
+</div>
 
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<div>
+    <input type="submit" value="Save"/>
+</div>
+
+</form> 
+-->
+
+<!-- USING form_tag -->
 <%#= form_tag('/users', method: 'post') do %>
 
-    <%#= label_tag(:username, 'Username:') %>
-    <%#= text_field_tag(:username) %>
+<!--
+    <div>
+        <%#= label_tag(:username, 'Username:') %>
+        <%#= text_field_tag(:username) %>
+    </div>
 
-    <%#= label_tag(:email, 'Email:') %>
-    <%#= text_field_tag(:email) %>
+    <div>
+        <%#= label_tag(:email, 'Email:') %>
+        <%#= text_field_tag(:email) %>
+    </div>
+    <div>
+        <%#= label_tag(:password, 'Password:') %>
+        <%#= password_field_tag(:password) %>
+    </div>
 
-    <%#= label_tag(:password, 'Password:') %>
-    <%#= password_field_tag(:password) %>
-
-    <%#= submit_tag('Save') %>
-
+    <div>
+        <%#= submit_tag('Save') %>
+    </div>
+-->
 <%# end %>
 
-<%= form_for(@user) do |f| %>
-    <div class="form-container">
-        <ul>
-            <% @user.errors.full_messages.each do |error| %>
-                <li><%= error %></li>
-            <%end%>
-        </ul>
-        <div>
-            <%= f.label :username, "Enter your username here:" %><br />
-            <%= f.text_field :username, placeholder:"username" %>
-        </div>
-        <div>
-            <%= f.label :email, "Enter your email address here: " %><br />
-            <%= f.text_field :email, placeholder:"example@example.com" %>
-        </div>
-        <div>
-            <%= f.label :password, "Enter your password here: " %><br />
-            <%= f.password_field :password, placeholder:"password" %>
-        </div>
-        <div>
-            <%= f.submit %>
-        </div>
-    </div>
-<% end %>
+<!--USING form_for-->
+<h1>Update this user</h1>
+<%= render partial: 'form' %>
