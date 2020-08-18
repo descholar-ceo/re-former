@@ -37,15 +37,15 @@ and observe the changes in your terminal
 ## Contributing
 There are two ways of contributing to this project:
 
-1. If you see something wrong or not working, please open the issue in [issue section](https://github.com/Georjane/re-former/issues)
+1. If you see something wrong or not working, please open the issue in [issue section](https://github.com/descholar-ceo/re-former/issues)
 1. If you see something to improve or to correct, and you have a solution to that, follow the below steps to contribute:
     1. Fork this repository
-    1. Clone it on your local computer by running `git clone https://github.com/Georjane/re-former.git` __Replace *your username* with the username you use on github__
+    1. Clone it on your local computer by running `git clone https://github.com/descholar-ceo/re-former.git` __Replace *your username* with the username you use on github__
     1. Open the cloned repository which appears as a folder on your local computer with your favorite code editor
     1. Create a separate branch off the *master branch*,
     1. Write your codes which fix the issue you found
     1. Commit and push the branch you created
-    1. Open a pull request, comparing your new created branch with our original master branch [here](https://github.com/Georjane/re-former)
+    1. Open a pull request, comparing your new created branch with our original master branch [here](https://github.com/descholar-ceo/re-former)
 
 ## Authors
 ### 1. MUGIRASE Emmanuel
@@ -56,7 +56,7 @@ There are two ways of contributing to this project:
 ### 2. Witah Ngu Georjane
 * Github: [@Georjane](https://github.com/Georjane)
 * Twitter: [@WittyJany](https://twitter.com/WittyJany)
-* LinkedIn: [Witah Georjane](https://www.linkedin.com/in/witah-georjane-74b8bb184)
+* LinkedIn: [Witah Georjane](https://www.linkedin.com/in/witah-georjane)
 
 
 ## Show your support 
