@@ -1,0 +1,53 @@
+<!-- USING raw html
+<form action="/users" method="POST" accept-charset="UTF-8">
+<div>
+    <label for="username">Username : </label>
+    <input type="text" name="user[username]" id="username"/>
+</div>
+
+<div>
+    <label for="email">Email : </label>
+    <input type="email" name="user[email]" id="email"/>
+</div>
+
+<div>
+    <label for="password">Password : </label>
+    <input type="password" name="user[password]" id="password"/>
+</div>
+
+<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+
+<div>
+    <input type="submit" value="Save"/>
+</div>
+
+</form> 
+-->
+
+<!-- USING form_tag -->
+<%#= form_tag('/users', method: 'post') do %>
+
+<!--
+    <div>
+        <%#= label_tag(:username, 'Username:') %>
+        <%#= text_field_tag(:username) %>
+    </div>
+
+    <div>
+        <%#= label_tag(:email, 'Email:') %>
+        <%#= text_field_tag(:email) %>
+    </div>
+    <div>
+        <%#= label_tag(:password, 'Password:') %>
+        <%#= password_field_tag(:password) %>
+    </div>
+
+    <div>
+        <%#= submit_tag('Save') %>
+    </div>
+-->
+<%# end %>
+
+<!--USING form_for-->
+<h1>Add a new user</h1>
+<%= render partial: 'form' %>

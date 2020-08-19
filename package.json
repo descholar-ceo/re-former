@@ -1,6 +1,10 @@
 {
   "name": "re_former",
   "private": true,
+  "scripts": {
+    "stylelint": "npx stylelint **/*.{css,scss}",
+    "stylelint-f": "npx stylelint **/*.{css,scss} --fix"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -10,6 +14,9 @@
   },
   "version": "0.1.0",
   "devDependencies": {
+    "stylelint": "13.3.x",
+    "stylelint-config-standard": "20.0.x",
+    "stylelint-scss": "3.17.x",
     "webpack-dev-server": "^3.11.0"
   }
 }
