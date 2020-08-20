@@ -35,7 +35,7 @@ This project is for learning purpose just to get familiar with Forms and helpers
 
 and observe the changes in your terminal
 
-### The forms look like the following on the screensgots
+### Screenshots of the Form
 |Add a new user|Update existing user|
 |-|-|
 |![](app/assets/images/add-scr.png)|![](app/assets/images/update-scr.png)|
